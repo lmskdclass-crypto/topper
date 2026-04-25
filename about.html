@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <style>
+        body {
+            background-image: url(bg/lap.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: fontP;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 45px;
+            height: 45px;
+            background-color: rgba(255, 255, 255, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            transition: 0.3s;
+            z-index: 100;
+        }
+
+        .back-btn img {
+            width: 60%;
+            height: auto;
+        }
+
+        .back-btn:hover {
+            background-color: rgb(229, 231, 235);
+            transform: scale(1.1);
+        }
+
+        .about-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .about-card {
+            background-color: rgba(255, 255, 255, 0.95);
+            width: 100%;
+            max-width: 1100px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about-header h1 {
+            color: rgb(233, 147, 19);
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .title-underline {
+            height: 4px;
+            width: 80px;
+            background-color: blueviolet;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .text-side {
+            flex: 1.5;
+            color: #333;
+        }
+
+        .text-side h2 {
+            color: blueviolet;
+            font-size: 26px;
+        }
+
+        .text-side p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .text-side ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .text-side ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            color: rgb(54, 187, 94);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .image-side {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-side img {
+            width: 100%;
+            max-width: 350px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .copyright {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-image: url(bg/phone.jpg);
+            }
+
+            .content-wrapper {
+                flex-direction: column-reverse;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .text-side ul li {
+                justify-content: center;
+            }
+
+            .about-card {
+                padding: 20px;
+                margin-bottom: 50px;
+            }
+
+            .about-header h1 {
+                font-size: 36px;
+            }
+
+            .image-side img {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="back-btn">
+        <img src="icons/back-ico.png" alt="back">
+    </a>
+
+    <div class="about-wrapper">
+        <div class="about-card">
+            <div class="about-header">
+                <h1>About Us</h1>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="text-side">
+                    <h2>Our Mission</h2>
+                    <p>Kd Classes में हमारा लक्ष्य सिर्फ पढ़ाना नहीं, बल्कि Aniket Kumar Patel को मिया होने का दर्जा
+                        दिलाना है| धन्यवाद !</p>
+
+                    <h2>Why Choose Us</h2>
+                    <ul>
+                        <li><span class="icon">✓</span> अनुभवी शिक्षक</li>
+                        <li><span class="icon">✓</span> कक्षा 10वीं की नियमित कक्षा</li>
+                        <li><span class="icon">✓</span> हर बच्चे पर व्यक्तिगत ध्यान</li>
+                        <li><span class="icon">✓</span> CCTV कैमरे की निगरानी में पढ़ाई</li>
+                    </ul>
+                </div>
+
+                <div class="image-side">
+                    <img src="images/p.jpg" alt="KD Classes">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="copyright">
+        &copy; 2026 Kd Class. All Rights Reserved.
+    </footer>
+</body>
+
+</html>

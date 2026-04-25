@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Kd Class</title>
+    <style>
+    body {
+        background-image: url(bg/lap.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0px;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding-bottom: 50px;
+    }
+
+    @font-face {
+        font-family: myFont;
+        src: url(font/SymphonieCalligraphyDEMO-Regular.otf);
+    }
+    @font-face {
+        font-family: fontP;
+        src: url(font/Belagak.ttf);
+    }  
+
+    h1 {
+        color: rgb(233, 147, 19);
+        text-align: center;
+        font-size: 60px;
+        font-family: myFont;
+    }
+    
+    .subtital {
+        color: blueviolet;
+        font-size: 30px;
+        font-family: fontP;
+        display: block;
+        text-align: center;
+    }
+    
+    p {
+        color: rgb(54, 187, 94);
+        font-size: 23px;
+        font-family: fontP;
+        text-align: center;
+    }
+
+    .nav-container {
+    background-color: rgb(233, 147, 19);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 25px;           
+    
+    width: fit-content;
+    margin: 20px auto;
+    border-radius: 50px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .nav-btn {
+     
+    text-decoration: none; 
+    color: white;
+    font-family: fontP;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.3s;
+    }
+
+    .nav-btn:hover {
+        background-color: transparent;
+        text-decoration: underline;
+        transform: translateY(-2px);
+    }
+
+    .copyright {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%; 
+        padding: 10px 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+        font-family: fontP;
+        font-size: 25px;
+        z-index: 1000;
+    }
+    
+    @media (max-width:768px) {
+        body {
+            background-image: url(bg/phone.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        .small-text {
+            font-size: 20px;
+            display: block;
+        }
+        .nav-container {
+            flex-direction: column;
+            width: 70%;
+            border-radius: 15px;
+            padding: 15px;
+        }
+    
+        .nav-btn {
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 10px 0px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome To <span class="small-text">Kd Classes!</span></h1>
+
+    <div class="nav-container">
+        <a href="index.html" class="nav-btn">Home</a>
+        <a href="notice.html" class="nav-btn">Notice</a>
+        <a href="about.html" class="nav-btn">About Us</a>
+    </div>
+   
+    <span class="subtital">Better Education For Better Future</span>
+    <p>Enroll Today Now For Better Future Of Your Child</p>
+    
+    <footer class="copyright">
+        &copy;2026 Kd Class. All Right Reserved.
+    </footer>
+</body>
+</html>
