@@ -1,0 +1,17 @@
+{
+  "name": "topper",
+  "version": "1.0.0",
+  "description": "Kd Classes website with Vercel Analytics",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'No build step required for static HTML'",
+    "dev": "npx serve .",
+    "lint": "echo 'No linter configured'"
+  },
+  "keywords": ["education", "classes", "static-site"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
