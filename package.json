@@ -1,0 +1,25 @@
+{
+  "name": "topper",
+  "version": "1.0.0",
+  "description": "Kd Classes - Better Education For Better Future",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "education",
+    "classes",
+    "website"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "analytics": {
+    "provider": "vercel",
+    "integration": "html-script-tag",
+    "scriptUrl": "https://cdn.vercel-insights.com/v1/script.js"
+  }
+}
